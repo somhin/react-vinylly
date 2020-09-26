@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
-import { Button } from "../../globalStyles";
+import { ButtonForNav } from "../../globalStyles";
 import {
 	Nav,
 	NavbarContainer,
@@ -66,13 +66,13 @@ const Navbar = () => {
 							<NavItemBtn>
 								{button ? (
 									<NavBtnLink to="/sign-up">
-										<Button primary>Sign up</Button>
+										<ButtonForNav primary>Sign up</ButtonForNav>
 									</NavBtnLink>
 								) : (
 									<NavBtnLink to="/sign-up">
-										<Button fontBig primary>
+										<ButtonForNav fontBig primary>
 											Sign up
-										</Button>
+										</ButtonForNav>
 									</NavBtnLink>
 								)}
 							</NavItemBtn>

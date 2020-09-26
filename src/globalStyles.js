@@ -25,9 +25,9 @@ export const Container = styled.div`
 	}
 `;
 
-export const Button = styled.button`
+export const ButtonForNav = styled.button`
 	border-radius: 4px;
-	background: ${({ primary }) => (primary ? "#8EB1C7" : "#E01A4F")};
+	background: ${({ primary }) => (primary ? "#00A676" : "#E01A4F")};
 	color: #0c0f0a;
 	white-space: nowrap;
 	padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
@@ -41,17 +41,38 @@ export const Button = styled.button`
 		transition: all 0.3s ease-out;
 		background: #fff;
 		color: #f3efe4;
-		background: ${({ primary }) => (primary ? "#dd403a" : "#8EB1C7")};
+		background: ${({ primary }) => (primary ? "#dd403a" : "#00A676")};
 	}
 
 	@media screen and (max-width: 960px) {
 		width: 100%;
 		font-weight: normal;
-		background: #fff;
+		background: #36413e;
+		color: #f3efe4;
+	}
+`;
 
-		&:hover {
-			color: #f3efe4;
-		}
+export const Button = styled.button`
+	border-radius: 4px;
+	background: ${({ primary }) => (primary ? "#00A676" : "#DD403A")};
+	color: #0c0f0a;
+	white-space: nowrap;
+	padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
+	font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+
+	&:hover {
+		transition: all 0.3s ease-out;
+		background: #fff;
+		color: #f3efe4;
+		background: ${({ primary }) => (primary ? "#DD403A" : "#00A676")};
+	}
+
+	@media screen and (max-width: 960px) {
+		width: 100%;
 	}
 `;
 

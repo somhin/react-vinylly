@@ -31,6 +31,11 @@ export const NavLogo = styled(Link)`
 	font-size: 2rem;
 	display: flex;
 	align-items: center;
+
+	&:hover {
+		border-bottom: 5px solid #dd403a;
+		margin-bottom: -8px;
+	}
 `;
 
 export const NavIcon = styled(FaCompactDisc)`
@@ -77,6 +82,7 @@ export const NavItem = styled.li`
 
 	&:hover {
 		border-bottom: 5px solid #dd403a;
+		margin-bottom: -7px;
 	}
 
 	@media screen and (max-width: 960px) {
