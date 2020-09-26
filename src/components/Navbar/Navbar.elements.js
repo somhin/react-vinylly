@@ -104,6 +104,7 @@ export const NavLinks = styled(Link)`
 	text-decoration: none;
 	padding: 0.5rem 1.2rem;
 	height: 100%;
+	color: #f3efe4;
 
 	@media screen and (max-width: 960px) {
 		color: #0c0f0a;
@@ -117,4 +118,26 @@ export const NavLinks = styled(Link)`
 			transition: all 0.3s ease;
 		}
 	}
+`;
+
+export const NavItemBtn = styled.li`
+	@media screen and (max-width: 960px) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 120px;
+	}
+`;
+
+export const NavBtnLink = styled(Link)`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	padding: 8px 16px;
+	height: 100%;
+	width: 100%;
+	border: none;
+	outline: none;
 `;
